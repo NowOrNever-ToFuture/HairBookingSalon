@@ -1,0 +1,330 @@
+Toàn bộ thân trang body {
+  font-family: "Roboto", sans-serif; /* Thay đổi font chữ thành Roboto */
+  background-color: #f9f9f9; /* Màu nền nhã nhặn */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Bố cục cho phần thông tin người dùng */
+.user-details {
+  position: relative; /* Đặt relative để có thể định vị tuyệt đối icon bút chì */
+  max-width: 1000px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề cho phần thông tin */
+.user-details h2 {
+  font-size: 24px;
+  color: #4a90e2;
+  margin-bottom: 15px;
+  position: relative; /* Đặt position để tạo không gian cho icon nếu cần */
+}
+
+/* Dòng thông tin liên hệ */
+.contact-info {
+  margin-top: 15px; /* Khoảng cách trên */
+}
+
+/* Các trường thông tin liên hệ */
+.contact-info p {
+  margin: 8px 0; /* Khoảng cách giữa các dòng thông tin */
+  font-size: 18px; /* Kích thước chữ cho các thông tin */
+  color: #555; /* Màu chữ tối hơn */
+}
+
+/* Nút chỉnh sửa */
+.edit-button {
+  position: absolute;
+  top: 10px; /* Đặt ở góc trên cùng của bảng */
+  right: 10px; /* Căn phải */
+  background-color: transparent; /* Nền trong suốt */
+  border: none; /* Bỏ viền */
+  color: #4caf50; /* Màu xanh cho icon */
+  cursor: pointer;
+  font-size: 20px; /* Kích thước icon */
+  transition: color 0.3s;
+}
+
+/* Hiệu ứng hover cho nút chỉnh sửa */
+.edit-button:hover {
+  background-color: #45a049; /* Đổi màu khi hover */
+}
+
+/* Bố cục chính cho trang profile */
+.profile-page {
+  /* background-color: #ffffff; */
+  max-width: 100%; /* Mở rộng toàn bộ chiều rộng */
+  padding: 30px 20px; /* Giãn cách các phần tử khỏi các cạnh */
+  border-radius: 8px; /* Bo tròn các góc */
+}
+
+/* Header */
+.header {
+  color: black;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Giữa header */
+  align-items: center;
+  margin-bottom: 20px; /* Thêm khoảng cách giữa header và phần thông tin */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Thông tin profile */
+.profile-info {
+  padding: 30px;
+  text-align: left;
+  background-color: #ffffff;
+  margin-top: 0px;
+  border-radius: 8px;
+  display: flex; /* Đảm bảo avatar và thông tin đặt cạnh nhau */
+  align-items: flex-start; /* Căn trên */
+}
+
+/* Tiêu đề thông tin profile */
+.profile-info h2 {
+  margin-bottom: 20px;
+  color: #4a90e2;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-info p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Hình đại diện - Avatar */
+.profile-image-container {
+  display: flex;
+  flex-direction: column; /* Đảm bảo các phần tử bên trong nằm theo cột (dọc) */
+  align-items: center; /* Căn giữa các nội dung */
+  margin-right: 40px; /* Tăng khoảng cách giữa container avatar và phần thông tin */
+  margin-bottom: 20px; /* Khoảng cách phía dưới ảnh đại diện */
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px; /* Khoảng cách giữa ảnh đại diện và nút */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng mềm cho avatar */
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-image img:hover {
+  transform: scale(1.1); /* Phóng to avatar khi hover */
+}
+
+/* Nút tải ảnh lên */
+.custom-file-upload {
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4a90e2;
+  color: white;
+  margin-top: 10px; /* Khoảng cách giữa nút và avatar */
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #357ab7; /* Đổi màu khi hover */
+}
+
+/* Nút thay đổi mật khẩu */
+.change-password-button {
+  background-color: #f44336; /* Màu đỏ cho nút thay đổi mật khẩu */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; /* Bo tròn các góc */
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.change-password-button:hover {
+  background-color: #d32f2f; /* Đổi màu khi hover */
+}
+
+/* Form chỉnh sửa và thay đổi mật khẩu */
+.edit-profile-form,
+.change-password-form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+/* Lịch sử giao dịch */
+.history-table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse; /* Kết hợp các ô trong bảng */
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Thiết lập chiều rộng cho từng cột */
+.history-table th:nth-child(1),
+.history-table td:nth-child(1) {
+  width: 15%; /* Cột đầu tiên rộng 10% */
+}
+
+.history-table th:nth-child(2),
+.history-table td:nth-child(2) {
+  width: 15%; /* Cột thứ hai rộng 15% */
+}
+
+.history-table th:nth-child(3),
+.history-table td:nth-child(3) {
+  width: 15%; /* Cột thứ ba rộng 25% */
+}
+
+.history-table th:nth-child(4),
+.history-table td:nth-child(4) {
+  width: 15%; /* Cột thứ tư rộng 15% */
+}
+
+.history-table th:nth-child(5),
+.history-table td:nth-child(5) {
+  width: 15%; /* Cột thứ năm rộng 10% */
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+  color: black; /* Đổi màu chữ cho tiêu đề bảng */
+}
+
+.history-table tr:hover {
+  background-color: #f5f5f5; /* Màu nền khi hover hàng */
+}
+
+/* Form chỉnh sửa thông tin và đổi mật khẩu */
+.edit-profile-form,
+.change-password-form {
+  margin-top: 20px; /* Thêm khoảng cách với phần thông tin */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Khoảng cách giữa các ô nhập */
+}
+
+.form-group label {
+  display: block; /* Đảm bảo label nằm trên ô nhập */
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Nút trong form */
+.form-actions {
+  display: flex; /* Đặt các nút ở cùng một hàng */
+  justify-content: flex-end; /* Đặt các nút về phía bên phải */
+}
+
+.form-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Khoảng cách giữa các nút */
+}
+
+/* Nút lưu thay đổi */
+.save-changes-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Nút hủy bỏ */
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hiệu ứng hover cho các nút trong form */
+.form-actions button:hover {
+  opacity: 0.8; /* Hiệu ứng mờ khi hover */
+}

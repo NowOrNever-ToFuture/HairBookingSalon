@@ -1,0 +1,282 @@
+.navbar-toggler.my-navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.icon-button {
+  border: none;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-button:hover,
+.icon-button:focus {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.navbar-toggler.my-navbar-toggler:focus,
+.btn-close.my-btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link.my-nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+  transition: transform 0.1s ease;
+  margin: 0 auto;
+}
+
+.nav-link.my-nav-link:hover,
+.nav-link.my-nav-link.active:hover {
+  color: #000;
+  transform: translateY(2px);
+}
+
+.navbar.my-navbar {
+  background-color: #f5f5f5;
+  backdrop-filter: blur(15px);
+  height: 80px;
+  /* margin: 15px; */
+  border-radius: 0px;
+  padding: 0.5rem;
+}
+
+.logo-image {
+  height: 5rem;
+  width: 100%;
+}
+
+.logo-image.offcanvas-title {
+  height: 5rem;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.custom-select .ant-select-selector {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background-color: #e2001a !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  padding: 20px 20px !important; /* Điều chỉnh padding để căn chỉnh tốt hơn */
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  transition: 0.3s background-color !important;
+  margin-top: -5px !important;
+}
+
+.custom-select .ant-select-item-option-content {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.custom-select .ant-select-item-option-content svg {
+  margin-right: 20px !important;
+}
+
+.custom-select .ant-select-selector:hover {
+  background-color: #eb5566 !important;
+}
+
+.custom-select .ant-select-item-option-active {
+  background-color: #eb5566 !important;
+  color: #fff !important;
+}
+
+.custom-select .ant-select-selection-item {
+  color: #fff !important;
+}
+
+.custom-select .ant-select-arrow {
+  color: #fff !important;
+  margin-left: auto !important;
+  align-self: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 5px !important;
+  margin-top: 0 !important;
+  margin-top: -3px !important;
+}
+
+.custom-select .ant-select-item {
+  background-color: #e2001a !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  padding: 8px 20px !important;
+  border-radius: 50px !important;
+  transition: 0.3s background-color !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.custom-select .ant-select-item:hover {
+  background-color: #eb5566 !important;
+  color: #fff !important;
+}
+
+.custom-select .ant-select-item-option-content {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.custom-select .ant-select-item-option-content svg {
+  margin-right: 8px !important;
+}
+
+@media (max-width: 576px) {
+  .navbar.my-navbar {
+    height: 80px;
+  }
+
+  .my-header {
+    height: 50px !important;
+    margin-bottom: -8px;
+  }
+
+  .logo-image {
+    height: 3rem;
+    width: 100%;
+  }
+}
+
+.d-flex button .custom-select .ant-select-selector {
+  margin-right: 30px;
+}
+
+@media (min-width: 992px) {
+  .nav-link.my-nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #e2001a;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link.my-nav-link:hover::before,
+  .nav-link.my-nav-link.active:hover::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 576px) {
+  .offcanvas.my-offcanvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1050;
+  }
+}
+
+.offcanvas.my-offcanvas {
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: max-content;
+  width: min-content;
+}
+
+/* .offcanvas-body.my-offcanvas-body{
+    padding: 20px !important;
+} */
+
+.login-button {
+  background-color: #e2001a;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: #eb5566;
+}
+
+.nav-item.my-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+}
+
+.ant-layout-sider-children {
+  background-color: #ffff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed; /* Fixes the sidebar to the screen */
+  height: 100vh; /* Full height of the viewport */
+  left: 0; /* Stick to the left side */
+  top: 0;
+  z-index: 1000; /* Ensure the sidebar stays on top */
+}
+
+.logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Căn giữa logo */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo-icon img {
+  max-width: 120px; /* Đặt chiều rộng tối đa cho logo */
+  height: auto; /* Giữ tỷ lệ khung hình */
+}
+
+.sidebar.collapsed .logo {
+  height: 0; /* Đặt chiều cao 0 khi collapsed */
+  padding: 0; /* Xóa padding khi collapsed */
+  overflow: hidden; /* Ẩn bất kỳ nội dung nào bên trong */
+}
+
+.menu-bar {
+  margin-top: 1rem;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  /* Xóa gap nếu muốn khoảng cách đồng nhất */
+  gap: 20px;
+  font-size: 15px;
+  position: relative;
+  padding: 0; /* Đảm bảo không có padding thừa */
+  border-inline-end: 0;
+}
+
+.menu-bar.collapsed {
+  margin-top: 94.797px;
+}
+
+.menu-bar .ant-menu-item .ant-menu-submenu {
+  padding-left: 24px; /* Đặt padding thống nhất cho các Menu.Item */
+  display: flex;
+  align-items: center; /* Đảm bảo nội dung icon và text luôn thẳng hàng */
+  height: 48px; /* Đảm bảo chiều cao đồng nhất cho mỗi item */
+}
+
+.menu-bar .ant-menu-item .anticon {
+  font-size: 18px; /* Đảm bảo icon có kích thước nhất quán */
+}
+
+/* .navbar-expand-xs{
+    margin-top: none;
+    padding-top: none;
+} */

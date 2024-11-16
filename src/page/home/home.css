@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Prata&display=swap");
+
+.carousel-item {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center item vertically */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4); /* Darkens the image */
+}
+.carousel-indicators {
+  position: absolute !important;
+  bottom: 20px !important; /* Điều chỉnh để căn dưới màn hình */
+  left: 50% !important;
+  transform: translateX(-50%); /* Căn giữa ngang */
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  z-index: 10 !important; /* Đảm bảo hiển thị lên trên */
+}
+
+.carousel-caption {
+  margin: 200px auto;
+  bottom: 30%; /* Keep this for desktop */
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between elements */
+}
+.carousel-caption h3 {
+  font-size: 4rem; /* Large font size for desktop */
+  font-family: "Libre Caslon Display", sans-serif;
+}
+
+.carousel-caption p {
+  margin-top: 5px;
+}
+
+.carousel-caption h4 {
+  border-top: 2px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+  padding: 10px;
+}
+
+.booking-button {
+  background-color: #e50000;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  background-color: #d40000;
+}
+
+.branch-info,
+.time-info {
+  color: white;
+  display: inline-block;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.branch-info {
+  margin-right: 30px;
+}
+
+.time-info {
+  margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+  /* Adjust for smaller screens */
+  .carousel-caption {
+    bottom: 40%; /* Raise caption for smaller screens */
+    gap: 15px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 3rem; /* Reduce font size for medium screens */
+
+    font-size: 4rem; /* Reduce font size for medium screens */
+  }
+
+  .booking-button {
+    font-size: 1rem; /* Adjust button size for medium screens */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust for small screens */
+  .carousel-caption {
+    bottom: 45%; /* Further raise caption for smaller screens */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .carousel-caption h3 {
+    font-size: 4rem; /* Further reduce font size */
+  }
+
+  .booking-button {
+    font-size: 0.9rem; /* Smaller button size */
+    padding: 6px 12px;
+  }
+
+  .info {
+    flex-direction: column; /* Stack info for small screens */
+    align-items: center;
+  }
+
+  .branch-info,
+  .time-info {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust for extra small screens */
+  .carousel-caption {
+    bottom: 50%; /* Higher position for mobile */
+    gap: 8px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 3rem; /* Smaller font size for mobile */
+  }
+
+  .booking-button {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .branch-info {
+    margin-bottom: -5px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the carousel */
+  padding: 20px; /* Add some padding */
+}
+
+.swiper-slide {
+  background: transparent; /* Transparent background */
+  padding: 40px; /* Adjust padding as needed */
+  text-align: center; /* Center the text */
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+.card {
+  border-radius: 20px !important;
+  border: 0.5px solid #e8e8e8 !important;
+  cursor: pointer !important;
+  padding-top: 10px !important;
+  box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0, 22) !important;
+  transition: 0.4s !important; /* Round the corners of the cards */
+  overflow: hidden !important; /* Ensure the content respects the border radius */
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 50px 0 !important;
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+.card-button {
+  text-align: center !important;
+  font-size: 24px !important;
+  color: #f5f5f5 !important;
+  width: 100% !important;
+  border: 0 !important;
+  outline: none !important;
+  cursor: pointer !important;
+  margin-top: 5px !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.card-action {
+  width: 100% !important;
+  background-color: #e2001a !important;
+}
+
+.card-action:hover {
+  background-color: #d40000 !important;
+}
+
+.content {
+  padding: 30px;
+}

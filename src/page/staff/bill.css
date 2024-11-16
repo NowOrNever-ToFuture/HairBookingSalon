@@ -1,0 +1,96 @@
+.bill-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.current-date {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-buttons {
+  display: flex;
+}
+
+.search-buttons button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-buttons button.selected {
+  background-color: #0056b3;
+}
+
+.search-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.search-buttons input {
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-header {
+  background-color: #f0f0f0;
+}
+
+.ant-table th {
+  font-weight: bold;
+}
+
+.ant-table td {
+  padding: 12px;
+}
+
+.ant-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.ant-modal-title {
+  text-align: center;
+}
+
+.ant-modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-form-item-label {
+  font-weight: bold;
+}
+
+.ant-select-selector {
+  border-radius: 4px;
+  border-color: #d9d9d9;
+}

@@ -1,0 +1,77 @@
+.schedule-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Đảm bảo các cột có cùng độ rộng */
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #333; /* Đường viền đậm và rõ ràng cho tất cả các ô */
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle; /* Canh giữa theo chiều dọc */
+}
+
+.schedule-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hour-cell {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  width: 100px;
+}
+
+.schedule-cell {
+  height: 60px; /* Chiều cao cố định cho các ô lịch */
+  background-color: #fff;
+}
+
+.schedule-cell:not(:empty) {
+  background-color: #d1f7c4; /* Màu nền cho các ô có lịch công việc */
+}
+
+.schedule-table td:not(.hour-cell) {
+  border-left: 1px solid #ddd; /* Đường viền mờ hơn giữa các cột */
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  border-left: none;
+}
+
+.schedule-table tr:first-child th {
+  border-top: none;
+}
+
+@media (max-width: 768px) {
+  .schedule-table th,
+  .schedule-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .hour-cell {
+    font-size: 12px;
+  }
+
+  .schedule-cell {
+    height: 40px; /* Giảm chiều cao các ô trên thiết bị nhỏ */
+  }
+}

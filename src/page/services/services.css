@@ -1,0 +1,86 @@
+/* Định dạng cho từng mục trong accordion */
+.accordion-item {
+  border: 1px solid #ddd; /* Đường viền cho mỗi mục */
+  border-radius: 5px; /* Bo góc */
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+/* Định dạng cho tiêu đề của accordion */
+.accordion-header {
+  background-color: #f8f9fa; /* Màu nền cho tiêu đề */
+}
+
+/* Định dạng cho body của accordion */
+.accordion-body {
+  padding: 15px; /* Khoảng cách bên trong body */
+}
+
+/* CSS cho banner dịch vụ */
+.banner-title {
+  font-weight: bold;
+  font-size: 50px; /* Kích thước mặc định trên màn hình lớn */
+}
+
+/* Khi màn hình nhỏ hơn 768px (ví dụ như tablet hoặc điện thoại) */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 35px; /* Giảm kích thước chữ cho màn hình nhỏ */
+  }
+}
+
+/* Khi màn hình nhỏ hơn 576px (ví dụ như điện thoại nhỏ hơn) */
+@media (max-width: 576px) {
+  .banner-title {
+    font-size: 25px; /* Giảm kích thước chữ thêm nữa cho màn hình rất nhỏ */
+  }
+}
+.banner-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.gallery-container img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+.service-card {
+  transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Phóng to card khi hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Tạo bóng cho card */
+}
+.stylist-card {
+  position: relative;
+  overflow: hidden; /* Để ẩn phần thông tin khi không hover */
+  transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.stylist-card:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.stylist-info {
+  position: absolute;
+  bottom: 0; /* Đặt thông tin ở đáy thẻ */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Nền màu trắng với độ trong suốt */
+  opacity: 0; /* Ẩn thông tin */
+  transition: opacity 0.3s ease; /* Hiệu ứng xuất hiện */
+}
+
+.stylist-card:hover .stylist-info {
+  opacity: 1; /* Hiển thị thông tin khi hover */
+}

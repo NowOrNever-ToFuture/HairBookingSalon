@@ -1,0 +1,90 @@
+/* appointment.css */
+
+.appointment-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Thay đổi cách bố trí để chứa cả ngày hiện tại và các nút tìm kiếm */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Căn chỉnh khoảng cách giữa hai phần */
+  align-items: center; /* Căn chỉnh dọc giữa */
+  margin-bottom: 20px; /* Khoảng cách giữa header và bảng */
+}
+
+.current-date {
+  font-size: 18px; /* Kích thước chữ cho ngày hiện tại */
+  font-weight: bold;
+}
+
+.search-buttons {
+  display: flex; /* Hiển thị các nút theo hàng ngang */
+}
+
+.search-buttons button {
+  margin-left: 10px; /* Khoảng cách giữa các nút */
+  padding: 5px 10px; /* Kích thước nút */
+  border: none; /* Xóa viền */
+  border-radius: 4px; /* Bo góc cho nút */
+  background-color: #007bff; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  cursor: pointer; /* Con trỏ khi hover */
+}
+
+.search-buttons button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.search-buttons button.selected {
+  background-color: #0056b3; /* Màu nền cho nút được chọn */
+  color: white; /* Màu chữ */
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Cho phép điều chỉnh chiều rộng cột */
+}
+
+.appointment-table th,
+.appointment-table td {
+  border: 1px solid #007bff; /* Màu viền giống như hình */
+  padding: 10px;
+  text-align: center;
+  background-color: #e9ecef; /* Màu nền các ô */
+}
+
+.appointment-table th {
+  background-color: #007bff; /* Màu nền tiêu đề */
+  color: white;
+  font-weight: bold;
+}
+
+.status-confirmed {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .appointment-table {
+    font-size: 14px; /* Giảm kích thước chữ trên thiết bị di động */
+  }
+
+  .appointment-table th,
+  .appointment-table td {
+    padding: 8px; /* Giảm khoảng cách trong ô */
+  }
+}

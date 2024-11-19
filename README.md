@@ -1,5 +1,5 @@
-# HairBookingSalon_API
-API for booking salon services
+# HairBookingSalon
+Website for booking salon services
 
 # BACKEND
 The API of web at BackEnd branch.
